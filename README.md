@@ -1,42 +1,34 @@
-# AngularJS - Testing Article
-This is a helper repository which is designed to be used alongside the blog article on yearofmoo.com.
+# AngularJS and Karma running with a quick start for the online Nitrous.io IDE
+The majority of this code is from a helper repository which is designed to be used alongside the blog article on yearofmoo.com.
 
-## Blog Article
+## Original Blog Article
 Click the link below to view the blog article which explains exactly what and how this application is used.
-
 http://www.yearofmoo.com/2013/01/full-spectrum-testing-with-angularjs-and-karma.html
 
-## Demo
-The Application can be demoed via:
+## Setup on Nitrous.io
+If you've ever had trouble setting up angular testing on your own machine, then this is a quick way to start. 
+You should be able to get everything working on Nitrous.io just by running npm install. 
 
-http://yearofmoo-articles.github.com/angularjs-testing-article/app/
+Sign in to Nitrous.io
+Create a Node box
+From the command line at the bottom, clone YOUR fork from Github and enter these other lines at the command line as well: 
+1. git clone https://github.com/ChrisBoesch/angularjs-karma-starter.git
+2. cd angularjs-karma-starter
+3. npm install
+4. npm install -g grunt-cli 
+5. grunt test
 
-## Using the application
-
-Install grunt
-`npm install -g grunt-cli`
-
-And then be sure to install everything that the repo requires:
-`npm install`
-`bower install`
+You should see all the tests passing. 
 
 ### Development Mode
 
 Run the following command to start the server
-`grunt server`
+`node server.js`
 
-Then run this to watch the files and update assets
-`grunt`
-
-You can now access the website at
-`http://localhost:8000`
-
-### Test
+This is an easy way to view your pages live. 
+You can now access the website by clicking on preview and port 8888.
 
 #### Single Run Tests
-
-Start the server to run e2e tests
-`grunt server`
 
 You can run individual test suites by running the commands:
 `grunt test:unit`
@@ -46,13 +38,9 @@ You can run individual test suites by running the commands:
 Or everything in order:
 `grunt test`
 
-
 #### Auto watching tests
 When watching tests, any save to a spec file will trigger karma to run the tests again
 for the specific test suite that is active at the time.
-
-Start the server to run e2e tests
-`grunt server`
 
 You can watch only watch one test suite a time.
 `grunt autotest:unit`
