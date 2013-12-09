@@ -46,3 +46,5 @@ You can watch only watch one test suite a time.
 `grunt autotest:unit`
 `grunt autotest:midway`
 `grunt autotest:e2e`
+
+Let me know if you are ever in Singapore. 
